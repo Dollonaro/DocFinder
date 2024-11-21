@@ -3,91 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cadastro de Paciente</title>
 </head>
 <body>
     <div class="container">
         <div class="content">
-            <form action="" method="POST">
+            <form action="pacientRegister.php" method="POST">
                 <div class="main-login">
             
                     <div class="left-login">
-                        <img src="./assets/DocFinder - Logo.png" alt="">
+                        <img src="./assets/DocFinder - Logo.png" alt="Logo">
                     </div>
             
                     <div class="right-login">
                         <div class="card-login">
                             
                             <div class="textfield">
-                                <label for="usuario">Nome</label>
-                                <input type="text" name="name" placeholder="Nome completo">
-                            </div>
+                                <label for="nome">Nome</label>
+                                <input type="text" name="nome" placeholder="Nome completo" required>
+                            </div>  
 
                             <div class="textfield">
-                                <label for="usuario">Usuário</label>
-                                <input type="text" name="name" placeholder="Nome do usuário">
-                            </div>
-
-                            <div class="textfield">
-                                <label for="sx">Sexo</label>
+                                <label for="genero">Sexo</label>
                                 <br>
-                            
-                                    <input type="radio" name="sex" id="masc" >
-                                    <label for="masc">Masculino</label>                                         
-                                    <input type="radio" name="sex" id="fem">
-                                    <label for="fem">Feminino</label>
+                                <input type="radio" name="genero" id="masc" value="Masculino">
+                                <label for="masc">Masculino</label>                                         
+                                <input type="radio" name="genero" id="fem" value="Feminino">
+                                <label for="fem">Feminino</label>
                             </div>
             
                             <div class="textfield">
-                                <label for="usuario">Email</label>
-                                <input type="text" name="email" placeholder="Email">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" placeholder="Email" required>
                             </div>
 
                             <div class="textfield">
-                                <label for="usuario">CPF</label>
-                                <input type="text" name="cpf" placeholder="CPF">
+                                <label for="cpf">CPF</label>
+                                <input type="text" name="cpf" placeholder="CPF" required>
                             </div>
 
                             <div class="textfield">
-                                <label for="usuario">Data de nascimento</label>
-                                <input type="date" name="data" placeholder="Data de nascimento">
+                                <label for="data_nasc">Data de nascimento</label>
+                                <input type="date" name="data_nascimento" placeholder="Data de nascimento" required>
                             </div>
 
                             <div class="textfield">
-                                <label for="phome">Telefone</label>
-                                <input type="phone" name="phone" placeholder="Telefone">
+                                <label for="telefone">Telefone</label>
+                                <input type="text" name="telefone" placeholder="Telefone" required>
                             </div>
 
                             <div class="textfield">
                                 <label for="endereco">Endereço de residência</label>
                                 <br>
-                                <input type="text" name="cidade" placeholder="Cidade">
+                                <input type="text" name="cidade" placeholder="Cidade" required>
                                 <br>
-                                <input type="text" name="bairro" placeholder="Bairro">
+                                <input type="text" name="bairro" placeholder="Bairro" required>
                                 <br>
                             </div>
 
                             <div class="textfield">
-                                <label for="usuario">Senha</label>
-                                <input type="password" name="senha" placeholder="Senha">
-                                <!-- <a href="recuperar_senha.html" class="recuperar-senha">Recuperar senha</a> -->
+                                <label for="senha">Senha</label>
+                                <input type="password" name="senha" placeholder="Senha" required>
                             </div>
 
                             <div class="textfield">
-                                <label for="usuario">Confirme senha</label>
-                                <input type="password" name="senha" placeholder="Senha">
+                                <label for="confirmar_senha">Confirme a senha</label>
+                                <input type="password" name="confirmar_senha" placeholder="Confirmar senha" required>
                             </div>
             
-                            <button class="btn-login">Entrar</button>
+                            <button class="btn-login">Cadastrar</button>
 
                             <br>
-                            <a href="../loginPaciente/index2 copy.html">Já tem um cadastro?</a>
+                            <a href="../loginPaciente/pacientLogin.html">Já tem um cadastro?</a>
                             
                         </div>
                     </div>
                 </div>
+            </form>
         </div>
     </div>
-    
 </body> 
 </html>
