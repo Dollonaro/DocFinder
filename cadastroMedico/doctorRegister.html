@@ -8,11 +8,11 @@
 <body>
     <div class="container">
         <div class="content">
-            <form action="" method="POST">
+            <form action="doctorRegister.php" method="POST">
                 <div class="main-login">
             
                     <div class="left-login">
-                        <img src="./assets/DocFinder - Logo.png" alt="">
+                        <!-- <img src="./assets/DocFinder - Logo.png" alt=""> -->
                     </div>
             
                     <div class="right-login">
@@ -20,21 +20,16 @@
                             
                             <div class="textfield">
                                 <label for="usuario">Nome</label>
-                                <input type="text" name="name" placeholder="Nome completo">
-                            </div>
-
-                            <div class="textfield">
-                                <label for="usuario">Nome do usuário</label>
-                                <input type="text" name="name" placeholder="Nome do usuário">
+                                <input type="text" name="nome" placeholder="Nome completo">
                             </div>
 
                             <div class="textfield">
                                 <label for="sx">Sexo</label>
                                 <br>
                             
-                                    <input type="radio" name="sex" id="masc" >
+                                    <input type="radio" name="genero" id="masc" value="Masculino">
                                     <label for="masc">Masculino</label>                                         
-                                    <input type="radio" name="sex" id="fem">
+                                    <input type="radio" name="genero" id="fem" value="Feminino">
                                     <label for="fem">Feminino</label>
                             </div>
             
@@ -47,9 +42,9 @@
                                 <label for="spe">Especialidade</label>
                                 <br>
                             
-                                    <input type="radio" name="esp" id="psicologo" >
+                                    <input type="radio" name="especialidade" id="psic" value="Psicologo">
                                     <label for="psic">Psicologo</label>                                         
-                                    <input type="radio" name="esp" id="psiquiatra">
+                                    <input type="radio" name="especialidade" id="psiq" value="Psiquiatra">
                                     <label for="psiq">Psiquiatra</label>
                             </div>
 
@@ -60,12 +55,12 @@
 
                             <div class="textfield">
                                 <label for="usuario">Data de nascimento</label>
-                                <input type="date" name="data" placeholder="Data de nascimento">
+                                <input type="date" name="data_nascimento" placeholder="Data de nascimento">
                             </div>
 
                             <div class="textfield">
                                 <label for="phome">Telefone</label>
-                                <input type="phone" name="phone" placeholder="Telefone">
+                                <input type="phone" name="telefone" placeholder="Telefone">
                             </div>
                             
                             <div class="textfield">
@@ -73,7 +68,7 @@
                                 <br>
                                 <input type="text" name="cep" placeholder="CEP">
                                 <br>
-                                <input type="text" name="numero" placeholder="Cidade">
+                                <input type="text" name="cidade" placeholder="Cidade">
                                 <br>
                                 <input type="text" name="rua" placeholder="Rua">
                                 <br>
@@ -91,10 +86,10 @@
 
                             <div class="textfield">
                                 <label for="usuario">Confirme senha</label>
-                                <input type="password" name="senha" placeholder="Senha">
+                                <input type="password" name="confirmar_senha" placeholder="Senha">
                             </div>
             
-                            <button class="btn-login">Entrar</button>
+                            <button type="submit" class="btn-login">Cadastrar</button>
 
                             <br>
                             <a href="../LoginMedico/doctorLogin.html">Já tem um cadastro?</a>
